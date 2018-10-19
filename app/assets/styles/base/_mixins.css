@@ -1,0 +1,44 @@
+@define-mixin atSmall {
+  @media (min-width: 530px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMedium {
+  @media (min-width: 800px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atLarge {
+  @media (min-width: 1010px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atLarger {
+  @media (min-width: 1600px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin clearfix {
+  &::after {
+    content: "";
+    clear:both;
+    display: table;
+ }
+}
+
+@define-mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@font-face {
+  font-family: Basic;
+  src: url('../../assets/images/basictitlefont.eot');
+  src: url('../../assets/images/basictitlefont.ttf') format('truetype'), url('../../assets/images/basictitlefont.woff') format('woff');
+}

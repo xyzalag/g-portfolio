@@ -1,0 +1,38 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Basic;
+  color: #333;
+  overflow-x: hidden;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-margin {
+	margin-left: 20%;
+}
+
+
+.shadow-black {
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.shadow-white {
+	box-shadow: 1px 1px 30px -1px rgba(255, 255, 255, 0.49);
+}
+

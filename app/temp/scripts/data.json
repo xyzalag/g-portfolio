@@ -1,0 +1,136 @@
+{
+   "projects" : {
+      "commerce" : [
+         {
+            "title" : "REALITY GAMES",
+            "thumbnail" : "commerce-1.jpg",
+            "color_palette" : "color-commerce-1.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "KOPALINSKI HIGH SCHOOL",
+            "thumbnail" : "commerce-2.jpg",
+            "color_palette" : "color-commerce-2.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "RACE CAR SOMETHING",
+            "thumbnail" : "commerce-3.jpg",
+            "color_palette" : "color-commerce-3.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "HR PROMO CLIP",
+            "thumbnail" : "commerce-4.jpg",
+            "color_palette" : "color-commerce-4.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "VERY GOOD FOOD",
+            "thumbnail" : "commerce-5.jpg",
+            "color_palette" : "color-commerce-5.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "BUŁKI",
+            "thumbnail" : "commerce-6.jpg",
+            "color_palette" : "color-commerce-6.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "PLECKI BARKI CIĘŻARKI",
+            "thumbnail" : "commerce-7.jpg",
+            "color_palette" : "color-commerce-7.png",
+            "video_link" : "https://vimeo.com/191947042"
+         }
+      ],
+    "films" : [
+    	         {
+            "title" : "VOID",
+            "thumbnail" : "film-1.jpg",
+            "color_palette" : "color-film-1.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "SIMIA",
+            "thumbnail" : "film-2.jpg",
+            "color_palette" : "color-film-2.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "CREEPY DUDE",
+            "thumbnail" : "film-3.jpg",
+            "color_palette" : "color-film-3.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "BATH TIME",
+            "thumbnail" : "film-4.jpg",
+            "color_palette" : "color-film-4.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "CONFUSED GUY IN THE DARK",
+            "thumbnail" : "film-5.jpg",
+            "color_palette" : "color-film-5.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "HIGH SCHOOL SUCKS",
+            "thumbnail" : "film-6.jpg",
+            "color_palette" : "color-film-6.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "INSOMNIA",
+            "thumbnail" : "film-7.jpg",
+            "color_palette" : "color-film-7.png",
+            "video_link" : "https://vimeo.com/191947042"
+         }
+    ],
+    "music_videos" : [
+    	    {
+            "title" : "PINK LADY - \"I'M SO COOL\"",
+            "thumbnail" : "clips-1.jpg",
+            "color_palette" : "color-clips-1.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "ONE DIRECTION - \"FAMOUS\"",
+            "thumbnail" : "clips-2.jpg",
+            "color_palette" : "color-clips-2.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "STEFAN MONIN - \"INFLOW\"",
+            "thumbnail" : "clips-3.jpg",
+            "color_palette" : "color-clips-3.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "BASIC WHITE GIRL <br>\"CRAZY\"",
+            "thumbnail" : "clips-4.jpg",
+            "color_palette" : "color-clips-4.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "SAM SMITH <br> \"SAD PIANO SONG\"",
+            "thumbnail" : "clips-5.jpg",
+            "color_palette" : "color-clips-5.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "FORUM <br> \"LATO W MOIM MIEŚCIE\"",
+            "thumbnail" : "clips-6.jpg",
+            "color_palette" : "color-clips-6.png",
+            "video_link" : "https://vimeo.com/191947042"
+         },
+         {
+            "title" : "JUSTIN BIEBER <br> \"BABY BABY\"",
+            "thumbnail" : "clips-7.jpg",
+            "color_palette" : "color-clips-7.png",
+            "video_link" : "https://vimeo.com/191947042"
+         }
+    ]
+   }
+}

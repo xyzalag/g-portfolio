@@ -1,0 +1,56 @@
+.sidenav {
+
+	height: 100vh;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 20px;
+    background-image: url('../../assets/images/underwater-overlay.jpg');
+    background-size: cover;
+   	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: 0 0px 20px rgba(0, 0, 0, .9);
+
+
+	&__logo {
+		height: 20%;
+		padding: 0 10px;
+
+		&__title {
+			text-indent: -9999px;
+		}
+	}
+
+
+	&__links {
+		height: 80%;
+		padding: 20px;
+
+		a {
+			text-decoration: none;
+			color: #FFF;
+			font-family: Basic;
+			font-size: 30px;
+			transition: all .25s ease-out;
+
+			&:hover{
+				margin-left: 30px;
+				border-bottom: .5px solid white;
+			}
+		}
+
+		li {
+			height: 20%;
+			background-color: transparent;
+			list-style: none;
+		}
+	}
+
+
+
+}

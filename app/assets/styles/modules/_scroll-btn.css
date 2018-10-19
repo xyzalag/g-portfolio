@@ -1,0 +1,38 @@
+.scroll-down{
+  position: absolute;
+  top: 85%;
+  transform: translateY(-15%);
+  left:0;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+
+      a {
+      transition: .25s all ease-out;
+      cursor: pointer;
+
+      &:hover{
+        color: rgba(0,0,0,.6);
+      }
+    }
+}
+
+.scroll-up {
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  cursor:pointer;
+  display:none;
+  color: $mainBlue;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+
+  &:hover {
+    color: black;
+  }
+}
+
+
+
+

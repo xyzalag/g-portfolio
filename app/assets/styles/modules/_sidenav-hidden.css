@@ -1,0 +1,139 @@
+.sidenav-hidden {
+	height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 20px;
+    background-color: rgba(0,0,0,0.9);
+	box-shadow: 0 0px 20px rgba(0, 0, 0, .9);
+	transition: 0.5s;
+
+
+	&__header {
+	    background-color: transparent;
+	    padding: 10px 0;
+  		position: absolute;
+  		width: 100%;
+  		z-index: 1;
+  		transition: background-color .3s ease-out;
+	}
+
+
+	&__logo {
+		text-align: center;
+		height: 60px;
+		padding: 0 5px;
+		display: block;
+		margin: 0 auto;
+
+		@mixin atMedium {
+			height: 150px;
+			padding: 0 20px;
+		}
+
+		@mixin atLarger {
+			height: 180px;
+		}
+
+		&__title {
+			text-indent: -9999px;
+		}
+	}
+
+	&__links {
+		height: 100%;
+		padding: 20px;
+
+		a {
+			text-decoration: none;
+			color: #FFF;
+			font-family: Basic;
+			font-size: 1.7rem;
+			display: block;
+			text-align: center;
+
+			@mixin atMedium {
+				font-size: 2.5rem;
+			}
+
+			@mixin atLarger {
+				font-size: 3.5rem;
+			}
+
+			&:hover{
+				font-weight: bold;
+				text-decoration: underline;
+			}
+		}
+
+		li {
+			height: 20%;
+			background-color: transparent;
+			list-style: none;
+		}
+	}
+
+}
+
+.open-icon {
+	float: left;
+	color: white;
+	padding: 20px;
+	font-size: 1.7rem;
+	cursor:pointer;
+	transition: .3s all ease-out;
+	margin-left: 10px;
+
+	@mixin atMedium {
+		font-size: 2.5rem;
+	}
+
+	@mixin atLarger {
+		font-size: 3rem;
+	}
+
+	&:hover {
+		color: $mainBlue;
+	}
+}
+
+.lang-icon {
+	float: right;
+	padding: 20px;
+	margin-right: 10px;
+	color: white;
+	font-size: 1.7rem;
+	cursor:pointer;
+	transition: .3s all ease-out;
+
+	@mixin atMedium {
+		font-size: 2.5rem;
+	}
+
+	@mixin atLarger {
+		font-size: 3rem;
+	}
+
+	&:hover {
+		color: $mainBlue;
+	}
+}
+
+.close-icon {
+	position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+    @mixin atLarger {
+    	font-size: 50px;
+    }
+}
+
+

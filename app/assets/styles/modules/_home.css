@@ -1,0 +1,128 @@
+.home {
+	width: 100vw;
+	min-height: 100vh;
+	background-color: #FFF;
+	overflow-x: hidden;
+
+    @mixin atLarge {
+        height: 100vh;
+        overflow-y: hidden;
+    }
+
+
+ 	&__bg {
+	 	background-image: url("../../assets/images/underwater-overlay.jpg");
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+ 	}
+
+ 	&__container {
+ 		min-height: 100%;
+ 	}
+
+ 	&__logo {
+ 		width: 250px;
+ 		height: 110px;
+ 		display: block;
+ 		margin: 0 auto;
+ 		margin-top: 70px;
+        margin-bottom: 50px;
+
+
+ 		@mixin atSmall {
+ 			width: 350px;
+ 			height: 175px;
+ 		}
+
+ 		@mixin atMedium {
+ 			width: 500px;
+ 			height: 250px;
+ 		}
+
+ 		@mixin atLarge {
+ 			width: 550px;
+ 			height: 300px;
+ 			margin-top: 60px;
+            margin-bottom: 30px;
+ 		}
+ 	}
+
+	&__row {
+
+		@mixin atLarge {
+			margin-top: 50px;
+		}
+		
+	}
+
+	&__col {
+		padding-top: .5rem;
+    	padding-bottom: .5rem;
+    	background-color: transparent;
+    	border: .5px solid white;
+    	transition: all .3s ease-out;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    	@mixin atLarge {
+            margin-left: 10px;
+            margin-right: 10px;
+    		padding-top: .75rem;
+    		padding-bottom: .75rem;
+    		&:hover {
+    		background-color: rgba(0,0,0,.3);
+    		border: .5px solid rgba(0,0,0,.2);
+    		transform: translateY(20px);
+    		}
+    	}
+    }
+
+    &__links {
+    	color: #FFF;
+    	font-size: 1rem;
+    	font-weight: 100;
+    	text-align: center;
+    	text-transform: uppercase;
+    	font-family: Basic;
+
+    	@mixin atSmall {
+    		font-size: 1.5rem;
+    	}
+
+    	@mixin atLarge {
+    		font-size: 2.5rem;
+    	}
+
+        &:hover{
+            font-weight: bold;
+        }
+    }
+
+    &__footer {
+        margin-bottom: 30px;
+
+    	&__text {
+    		color: #FFF;
+    		text-align: center;
+    		font-family: Basic;
+    		text-transform: uppercase;
+    		display: block;
+    		margin: 0 auto;
+    		font-size: 1rem;
+
+    		@mixin atMedium {
+    			font-size: 1.5rem;
+    		}
+    		@mixin atLarger {
+    			font-size: 2rem;
+    		}
+    	}
+    }
+
+}
+
+.no-margin {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}

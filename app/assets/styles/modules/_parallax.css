@@ -1,0 +1,27 @@
+.parallax {
+
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--hero {
+      min-height: 100vh;
+      background-image: url('../../assets/images/underwater-overlay.jpg');
+    }
+
+    &--recommendations {
+      background-color: #FFF;
+      height: auto;
+      @mixin atMedium {
+        background-image: url('../../assets/images/recommendations-bg-dots-white.jpg');
+      }
+    }
+
+    &--clinic {
+      height: auto;
+      background-image: url('../../assets/images/clinic-bg.jpg');
+    }
+}
