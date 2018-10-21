@@ -1,0 +1,40 @@
+.subtitle {
+
+  width: 180px;
+  padding: 10px 5px;
+  border: 1px solid $color-first;
+  position: relative;
+  background-color: rgba($color-first, .7);
+  color: #fff;
+
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+
+  @mixin atLarge {
+    width: 230px;
+    padding: 20px 10px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 150%);
+    z-index: -999;
+    content: "Graphic Designer";
+    width: inherit;
+    background-color: inherit;
+    border: inherit;
+    padding: inherit;
+
+    @mixin atSmall {
+      top: 0;
+      right: 0;
+      transform: translate(-85%, 50%);
+    }
+
+  }
+}

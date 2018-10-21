@@ -1,15 +1,17 @@
 .footer {
-  background-color: #000;
-  color: #FFF;
-  padding: .5rem 0;
+  color: $color-first;
+  padding: .2rem 0;
   text-align: center;
+  border-top: 1px dashed $color-second;
 
   &__text {
     display: block;
     margin-bottom: 1rem;
     font-weight: 200;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: .8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 
     @mixin atMedium {
       display: inline;

@@ -1,201 +1,67 @@
 .project {
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 40px;
-	transition: all .25s ease-out;
-	color: #000;
-	border: 1px dotted black;
 
-	@mixin atMedium {
-		border: 1px dotted transparent;
-	}
-
-	@mixin atLarger{
+	&__col {
+		max-width: 300px !important;
+		max-height: 300px !important;
+		margin-left: 30px;
 		margin-bottom: 60px;
-	}
-
-	&--bg {
-
-		&:hover{
-			background-image: url('../../assets/images/color_palette.png');
-    		background-size: cover;
-   			background-position: center;
-			background-repeat: no-repeat;
-		}
-	}
-
-	&:hover {
-		border: 1px solid black;
-		color: white;
-	}
-
-/* 	&:hover .project__description:nth-of-type(even) {
-		background-color: black;
-		transform: translateX(-70px);
-	}
-
-	&:hover .project__thumbnail:nth-of-type(odd) {
-		transform: translateX(70px);
-	} */
-
-	&:hover .project__description {
-		background-color: black;
-	}
-
-	@mixin atLarge {
-
-		&:hover .project__description:nth-of-type(odd) {
-			z-index: 2;
-			transform: translate(70px, -20px);
-		}
-
-		&:hover .project__thumbnail:nth-of-type(even) {
-			z-index: 1;
-			transform: translateX(-70px);
-		}
-
-		&:hover .project__description:nth-of-type(even) {
-			transform: translate(-70px, 20px);
-		}
-
-		&:hover .project__thumbnail:nth-of-type(odd) {
-			transform: translateX(70px);
-		}
-
-	}
-
-	&__column {
-		margin-top: 10px;
-		margin-bottom: 10px;
-
-		@mixin atMedium {
-			margin-top: 40px;
-			margin-bottom: 40px;
-		}
-
-		&--left {
-			margin-left: 0;
-			margin-right: 0;
-
-			@mixin atMedium {
-				margin-left: 40px;
-			    margin-right: 20px;
-			}
-		}
-
-		&--right {
-			margin-right: 0;
-			margin-left: 0;
-
-			@mixin atMedium {
-				margin-left: 40px;
-			    margin-right: 20px;
-			}
-		}
-	}
-
-	&__thumbnail{
-		text-align: center;
-		transition: all .5s ease;
-
-		&__overlay {
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  margin: 0 auto;
-		  transform: translate(-50%, -50%);
-/* 		  width: 93.5%;
-		  height: 98%; */
-		  width: 100%;
-		  height: 100%;
-/* 		  bottom: 0;
-		  left: 0;
-		  right: 0; */
-		  opacity: 1;
-		  transition: .5s ease;
-		  background-color: #000;
-		}
-	}
-
-	&__image {
 		position: relative;
-		box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
-		width: 100%;
 
-		@mixin atMedium {
-			width: auto;
+		&:hover .project__overlay {
+			opacity: 1;
 		}
 	}
-	
+	&__thumbnail{
+		border: 5px solid rgba($color-first, .3);
+		cursor: pointer;
+		width: 300px;
+		height: 300px;
+	}
 
+	&__overlay {
+		opacity: 0;
+		width: 300px;
+		height: 300px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		background-color: rgba($color-first, .8);
+		transition: opacity .3s ease-in-out;
 
-	&__play {
-		@mixin centerer;
-		visibility: hidden;
-		width: 50px;
-		height: 50px;
-
-
-		@mixin atSmall {
-			width: auto;
-			height: auto;
+		h2 {
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-weight: 300;
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			white-space: nowrap;
+			color: #fff;
 		}
 
-		&:hover{
+		button {
+			position: absolute;
+			top: 60%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 			cursor: pointer;
-		}
-	}
+			border: 1px solid $color-second;
+			background-color: transparent;
+			font-weight: light;
+			font-size: 14px;
+			color: #fff;
+			padding: 10px;
+			letter-spacing: 3px;
+			transition: all .25s ease-in-out;
+			text-transform: uppercase;
 
-	&__description {
-		transition: all .5s ease;
-
-		&--bg {
-			display: flex;
-			justify-content: center; 
-			align-items: center; 
-		}
-
-	}
-
-	&__title {
-		text-align: center;
-		font-size: 1.8rem;
-		letter-spacing: 1px;
-		font-weight: 300;
-
-		@mixin atMedium {
-			font-size: 2.3rem;
-		}
-
-		@mixin atLarger {
-			font-size: 2.5rem;
-		}
-
-		&--bg {
-			font-size: 1.8rem;
-			font-weight: 600;
-
-			@mixin atMedium {
-				font-size: 3.5rem;
+			&:hover {
+				background-color: $color-second;
 			}
+
 		}
 	}
-
-	&__info {
-		font-size: 20px;
-	}
-
-
-	&__color-palette {
-		display: block;
-		margin: 0 auto;
-	}
-}
-
-.project:nth-of-type(odd) {
-	padding-bottom: 10px;
-}
-
-.project:nth-of-type(even) {
-	padding-top: 10px;
 }

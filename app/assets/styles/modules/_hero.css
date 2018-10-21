@@ -1,0 +1,95 @@
+.hero {
+
+    &__container {
+         min-height: 96vh;
+         position: relative;
+         margin: 2%;
+         background-color: transparent;
+         border: 10px solid rgba($color-first, .3);
+     }
+
+     &__logo {
+        &__container {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            border-radius: 100%;
+            display: block;
+            margin: 20px auto;
+            border: 1px solid $color-second;
+
+         }
+
+         &__img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 125px;
+            height: 85px;
+          }
+      }
+
+      &__title-container {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @mixin atSmall {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-100%, -50%);
+        }
+
+      }
+
+      &__subtitle-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+        @mixin atSmall {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(0, -50%);
+
+        }
+
+      }
+
+
+      &__divider-container {
+
+        .divider__col {
+          height: 200px;
+          position: relative;
+
+          @mixin atSmall {
+            height: 400px;
+          }
+        }
+
+        .divider__col:nth-of-type(1){
+          border-bottom: 1px solid $color-second;
+
+          @mixin atSmall {
+            border-right: 1px solid $color-second;
+            border-bottom: none;
+          }
+        }
+
+      }
+
+      &__scroll {
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        position: relative;
+      }
+
+}
