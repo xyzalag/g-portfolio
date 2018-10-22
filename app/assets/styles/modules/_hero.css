@@ -30,6 +30,39 @@
           }
       }
 
+      &__header {
+        font-family: 'Sacramento', cursive;
+        font-weight: lighter;
+        font-size: 30px;
+        text-align: center;
+        display: none;
+        transition: all .25s ease;
+
+        &:hover {
+          transform: scale(.95);
+        }
+
+        @mixin atMedium{
+          display: block;
+
+          &--1 {
+            text-align: right;
+            margin-right: 20px;
+          }
+
+          &--2 {
+            text-align: left;
+            margin-left: 20px;
+          }
+        }
+
+        a {
+          color: $color-first;
+        }
+
+      }
+
+
       &__title-container {
         position: absolute;
         top: 20%;

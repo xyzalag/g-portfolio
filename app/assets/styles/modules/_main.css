@@ -1,6 +1,7 @@
 .main {
 
 	transition: margin-left .5s;
+	margin-bottom: 100px;
 
 	&__title {
 		margin-top: 40px;
@@ -11,6 +12,10 @@
 		font-weight: 100;
 		color: $color-second;
 
+		&--pink {
+			color: $color-first;
+		}
+
 		@mixin atMedium {
 			font-size: 4.5rem;
 			margin-top: 100px;
@@ -18,7 +23,6 @@
 
 		@mixin atLarger {
 			font-size: 5.5rem;
-			margin-top: 200px;
 		}
 	}
 

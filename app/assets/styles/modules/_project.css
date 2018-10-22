@@ -1,14 +1,39 @@
 .project {
+	.col-lg {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+
+		@mixin atMedium {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	}
 
 	&__col {
 		max-width: 300px !important;
 		max-height: 300px !important;
-		margin-left: 30px;
-		margin-bottom: 60px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
 		position: relative;
+		transition: all .25s ease-in-out;
 
 		&:hover .project__overlay {
+			transform: rotate(360deg);
 			opacity: 1;
+		}
+
+		&:hover .project__thumbnail {
+			border: 5px solid transparent;
+		}
+
+		@mixin atLarge {
+			margin-left: 30px;
+			margin-bottom: 60px;
+		}
+
+		&:hover {
+			transform: scale(1.05);
 		}
 	}
 	&__thumbnail{
@@ -16,10 +41,13 @@
 		cursor: pointer;
 		width: 300px;
 		height: 300px;
+		box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		border-radius: 3px;
+		transition: all .25s ease-in-out;
 	}
 
 	&__overlay {
-		opacity: 0;
+		opacity: .8;
 		width: 300px;
 		height: 300px;
 		position: absolute;
@@ -27,7 +55,13 @@
 		left: 0;
 		z-index: 999;
 		background-color: rgba($color-first, .8);
-		transition: opacity .3s ease-in-out;
+		background-image: linear-gradient(to right bottom, $color-first, $color-first-dark);
+		transition: opacity .25s linear;
+		border-radius: 3px;
+
+		@mixin atLarge {
+			opacity: 0;
+		}
 
 		h2 {
 			position: absolute;
@@ -60,8 +94,10 @@
 
 			&:hover {
 				background-color: $color-second;
+				margin-top: 5px;
 			}
 
 		}
 	}
 }
+
