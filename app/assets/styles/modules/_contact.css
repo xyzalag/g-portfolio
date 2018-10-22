@@ -32,8 +32,7 @@ padding-bottom: 30px;
 
 
   &__mail {
-
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 3px;
     font-weight: bold;
     background: linear-gradient(to right, $color-first 0%, $color-second 100%);

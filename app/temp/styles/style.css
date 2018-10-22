@@ -714,8 +714,7 @@ padding-bottom: 30px;
       z-index: -9999;
     }
 .contact__mail {
-
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 3px;
     font-weight: bold;
     background: linear-gradient(to right, #ab8192 0%, #c0b283 100%);
